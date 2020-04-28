@@ -1,0 +1,10 @@
+Categoria Difficoltà Tipologia Domanda Risposta corretta Risposte sbagliate
+Geografia~Facile~Aperta~In che regione italiana si trova il Monte Bianco?~Valle d'Aosta//
+Geografia~Facile~Multipla~Qual'e' la capitale del Belgio?~Bruxelles//~Londra~Copenaghen~Amsterdam
+Geografia~Facile~Riempimento~Il palazzo reale Campano?~Reggia di Caserta//
+Geografia~Media~Aperta~La piramide piu' alta d'Egitto?~Piramide di Cheope//
+Geografia~Media~Multipla~Il Nilo e' lungo?~6853km//~2150km~3415km~7555km
+Geografia~Media~Riempimento~Il mar Morto bagna...?~Giordania Israele Palestina//
+Geografia~Difficile~Aperta~Di che regione italiana e' originario l'orso bruno marsicano?~Abruzzo//
+Geografia~Difficile~Multipla~L'altezza del Monte Rosa?~4623m//~3987m~4512m~4724m
+Geografia~Difficile~Riempimento~La capitale del Gabon?~Libreville//

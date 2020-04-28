@@ -1,0 +1,91 @@
+.bStyle-base{
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Button.png');
+    -fx-background-size: cover;
+    -fx-font-family: 'Fresh Marker';
+    -fx-font-size: 20;
+}
+.bStyle-base:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Button.png');
+    -fx-background-size: cover;
+    -fx-font-family: 'Fresh Marker';
+    -fx-font-size: 20;
+    -fx-effect: InnerShadow(one-pass-box , white , 8 , 0.0 , 2, 0);
+}
+.bStyle-base:pressed {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Button.png');
+    -fx-background-size: cover;
+    -fx-font-family: 'Fresh Marker';
+    -fx-font-size: 20;
+    -fx-effect: DropShadow(one-pass-box , black , 8 , 0.0 , 2, 0);
+}
+.bStyle-2{
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Button.png');
+    -fx-background-size: 160px 45px;
+    -fx-font-family: 'Fresh Marker';
+    -fx-font-size: 12;
+}
+.bStyle-2:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Button.png');
+    -fx-background-size: 160px 45px;
+    -fx-font-family: 'Fresh Marker';
+    -fx-font-size: 12;
+    -fx-effect: InnerShadow(one-pass-box , white , 8 , 0.0 , 2, 0);
+}
+.bStyle-2:pressed {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Button.png');
+    -fx-background-size: 160px 45px;
+    -fx-font-family: 'Fresh Marker';
+    -fx-font-size: 12;
+    -fx-effect: DropShadow(one-pass-box , black , 8 , 0.0 , 2, 0);
+}
+
+.root{
+    -fx-background-image: url('/lib/UI/Background.png');
+    -fx-background-size: cover;
+}
+.v-box{
+    -fx-background-color: transparent;
+    -fx-background-image: url('/lib/UI/Background.png');
+    -fx-background-size: cover;
+}
+.split-pane{
+    -fx-background-color: transparent;
+}
+.split-pane-divider {
+  -fx-padding: 0 ;
+}
+.table-view{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-row-cell{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+.table-row-cell:selected{
+    -fx-background-color: rgba(0,255,0,0.8);
+    -fx-background-radius: 10;
+}
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+.answer-result-box{
+    -fx-background-image: url('/lib/UI/AnswerResult.png');
+    -fx-background-size: cover;
+}
+.custom-label{
+    -fx-font-family: 'Fresh Marker';
+}

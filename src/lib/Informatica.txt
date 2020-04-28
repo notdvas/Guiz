@@ -1,0 +1,15 @@
+Categoria Difficoltà Tipologia Domanda Risposta corretta Risposte sbagliate
+Informatica~Facile~Aperta~Quale linguaggio di programmazione studiamo a lezione?~Java//
+Informatica~Facile~Multipla~Le array iniziano da?~0//~1~Ieri~10
+Informatica~Facile~Riempimento~La sigla CPU sta per?~Central Processing Unit//
+Informatica~Facile~Aperta~Il nome del famoso motore di ricerca...~Google//
+Informatica~Facile~Multipla~Un PICNIC problem e' un tipo di problema relativo a?~L'utente//~L'hardware~Il software~Un virus
+Informatica~Facile~Riempimento~In computer grafica, un'immagine 2d applicata ad un modello 3d viene chiamata?~Texture//
+Informatica~Media~Aperta~L'azienda con il logo verde che produce GPU~NVidia//
+Informatica~Media~Multipla~Il software libero viene anche chiamato?~Open Source//~Freeware~Malware~Freemium
+Informatica~Media~Riempimento~Il nome completo del Facebook russo~VKontakte//
+Informatica~Difficile~Aperta~La holding a cui fa capo Google~Alphabet//
+Informatica~Difficile~Multipla~Il primo Iphone fu rilasciato nel?~2007//~2009~2005~2004
+Informatica~Difficile~Riempimento~Ha iniziato a rompere le scatole dal lancio della PlayStation1~Crash Bandicoot//
+
+

@@ -1,0 +1,10 @@
+Categoria Difficoltà Tipologia Domanda Risposta corretta Risposte sbagliate
+Storia~Facile~Aperta~Leonardo da Vinci visse nel periodo storico denominato?~Rinascimento//
+Storia~Facile~Multipla~La prima guerra mondiale e' iniziata nel?~1914//~1917~1913~1918
+Storia~Facile~Riempimento~Il nome completo dell'universita' di Bologna~Alma Mater Studiorum//
+Storia~Media~Aperta~Il fondatore dell'universita' di Bologna~Irnerio//
+Storia~Media~Multipla~Napoleone Bonaparte nacqua a?~Ajaccio//~Genova~Torino~Nizza
+Storia~Media~Riempimento~Il periodo storico che va dal 1947 al 1991~Guerra Fredda//
+Storia~Difficile~Aperta~Il primo ministro britannico durante la seconda Guerra Mondiale~Winston Churchill//
+Storia~Difficile~Multipla~Veniva detto "Il Re Sole"?~Luigi XIV//~Luigi XV~Luigi XVI~Luigi XIII
+Storia~Difficile~Riempimento~Il motto dell'illuminismo~Liberte Egalite Fraternite//

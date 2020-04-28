@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="gameVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="/lib/Scenes/StyleSheet" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiz.GameController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="playerNameLabel" alignment="BOTTOM_LEFT" style="-fx-font-family: 'Fresh Marker'; -fx-font-size: 80;" text="Nome Giocatore" HBox.hgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="40.0" />
+               </font></Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="142.0" layoutY="10.0" style="-fx-font-family: 'Fresh Marker'; -fx-font-size: 80;" text="    ">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="256.0" layoutY="52.0" style="-fx-font-family: 'Fresh Marker'; -fx-font-size: 80;" text="Punteggio" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <StackPane prefHeight="668.0" prefWidth="1280.0">
+         <children>
+            <VBox prefHeight="601.0" prefWidth="1280.0">
+               <children>
+                  <HBox fx:id="questionHBox" alignment="CENTER" prefHeight="232.0" prefWidth="1280.0" visible="true">
+                     <children>
+                        <Label fx:id="questionLabel" alignment="CENTER" minHeight="180.0" minWidth="640.0" prefHeight="180.0" prefWidth="640.0" style="-fx-background-color: transparent; -fx-background-image: url('/lib/UI/Button.png'); -fx-background-size: cover;" text="Domanda" />
+                     </children>
+                  </HBox>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <HBox fx:id="openAnswerBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="openAnswerTextField" prefHeight="84.0" prefWidth="281.0" />
+                              <Button fx:id="submitOpen" mnemonicParsing="false" onAction="#submitOpenAnswer" prefHeight="45.0" prefWidth="160.0" styleClass="bStyle-2" text="Conferma" />
+                           </children>
+                        </HBox>
+                        <VBox fx:id="multiQuestionBox" prefHeight="200.0" prefWidth="100.0" visible="false">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="rispostaUno" minHeight="90.0" minWidth="320.0" mnemonicParsing="false" onAction="#submitMulti" styleClass="bStyle-base">
+                                       <HBox.margin>
+                                          <Insets right="250.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="rispostaDue" layoutX="283.0" layoutY="48.0" minHeight="90.0" minWidth="320.0" mnemonicParsing="false" onAction="#submitMulti" styleClass="bStyle-base">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="100.0" top="25.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox fx:id="openAnswerBox11" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="rispostaTre" minHeight="90.0" minWidth="320.0" mnemonicParsing="false" onAction="#submitMulti" styleClass="bStyle-base">
+                                       <HBox.margin>
+                                          <Insets right="250.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="rispostaQuattro" layoutX="283.0" layoutY="48.0" minHeight="90.0" minWidth="320.0" mnemonicParsing="false" onAction="#submitMulti" styleClass="bStyle-base" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="boxFillQuestion" prefHeight="200.0" prefWidth="100.0" visible="false">
+                           <children>
+                              <HBox fx:id="boxLettere" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                              <HBox fx:id="rispostaButton" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <GridPane fx:id="singleQuestionResult" maxHeight="400.0" maxWidth="400.0" prefHeight="400.0" prefWidth="400.0" styleClass="answer-result-box" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="questionAnsweredName" contentDisplay="CENTER" styleClass="custom-label" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="questionAnsweredResult" layoutX="104.0" layoutY="52.0" styleClass="custom-label" text="Ha risposto correttamente o menoe ha guadagnato:" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label fx:id="questionAnsweredScore" layoutX="119.0" layoutY="152.0" styleClass="custom-label" text="PUNTI" textAlignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="questionAnswredProgress" mnemonicParsing="false" onAction="#progressGame" text="Continua" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="sceltaSpeciale" layoutX="450.0" layoutY="101.0" maxHeight="400.0" maxWidth="400.0" prefHeight="400.0" prefWidth="400.0" styleClass="answer-result-box" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.66668701171875" minWidth="10.0" prefWidth="200.6666259765625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.33331298828125" minWidth="10.0" prefWidth="199.3333740234375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.33331298828125" minWidth="10.0" prefWidth="199.3333740234375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.33331298828125" minWidth="10.0" prefWidth="199.3333740234375" />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Evento Speciale!" GridPane.columnSpan="4" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="saltaTurnoBotton" mnemonicParsing="false" onAction="#saltaTurno" prefHeight="45.0" prefWidth="160.0" styleClass="bStyle-2" text="Salta Turno" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Button fx:id="raddoppioBotton" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#doubleScore" prefHeight="45.0" prefWidth="160.0" styleClass="bStyle-2" text="Raddopia punti" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <HBox fx:id="saltaTurnoBox" maxWidth="300.0" prefHeight="100.0" prefWidth="300.0" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="victoryPane" maxHeight="530.0" maxWidth="500.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="10.0" prefWidth="500.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="10.0" prefWidth="500.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="250.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="winnerName" styleClass="custom-label" textAlignment="CENTER" GridPane.columnSpan="4" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>prefHeight="45.0" prefWidth="160.0"
+                  </Label>
+                  <TableView fx:id="finalScoreTable" maxHeight="250.0" maxWidth="460.0" prefWidth="250.0" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="nameColumn" maxWidth="230.0" prefWidth="230.0" text="Nome" />
+                        <TableColumn fx:id="scoreColumn" maxWidth="230.0" prefWidth="230.0" sortType="DESCENDING" text="Score" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" prefHeight="45.0" prefWidth="160.0" styleClass="bStyle-2" text="Indietro" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
